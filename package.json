@@ -9,7 +9,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
+    "deploy": "wrangler deploy --config dist/server/wrangler.json",
     "generate-types": "wrangler types"
   },
   "dependencies": {
