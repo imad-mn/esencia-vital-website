@@ -1,5 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import donaLevadura from "../images/DonaLevadura.webp";
 ---
 
 <!-- DOÑA LEVADURA — producto destacado -->
@@ -33,8 +35,8 @@ import { Icon } from "astro-icon/components";
 
       <!-- Logo Doña Levadura -->
       <div class="flex justify-center mb-8">
-        <img
-          src="/images/DonaLevadura.webp"
+        <Image
+          src={donaLevadura}
           alt="Logo Doña Levadura - Pan de Masa Madre"
           class="w-56 h-56 md:w-72 md:h-72 object-contain drop-shadow-xl"
         />

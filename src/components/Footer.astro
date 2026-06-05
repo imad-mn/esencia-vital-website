@@ -1,5 +1,7 @@
 ---
 import { Icon } from "astro-icon/components";
+import { Image } from "astro:assets";
+import logo2 from "../images/logo2.png";
 ---
 
 <!-- FOOTER -->
@@ -11,13 +13,12 @@ import { Icon } from "astro-icon/components";
 
       <!-- Logo + nombre -->
       <div class="flex items-center gap-3">
-        <img
-          src="/images/logo.png"
+        <Image
+          src={logo2}
           alt="Centro de Salud Esencia Vital"
           width="44"
           height="44"
           class="opacity-90"
-          onerror="this.style.display='none';"
         />
         <h3
           class="text-2xl font-bold"
