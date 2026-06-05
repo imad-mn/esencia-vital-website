@@ -19,3 +19,4 @@ pnpm-debug.log*
 
 #otros
 .wrangler
+.codegraph  
