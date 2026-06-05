@@ -1,0 +1,49 @@
+---
+const valores = [
+  { texto: "Natural", emoji: "🌿" },
+  { texto: "Integral", emoji: "☯️" },
+  { texto: "Con amor", emoji: "💚" },
+  { texto: "Artesanal", emoji: "🤲" },
+];
+---
+
+<!-- SOBRE NOSOTROS -->
+<section id="nosotros" class="py-20 px-6 bg-white">
+  <div class="max-w-4xl mx-auto text-center">
+
+    <!-- Eyebrow -->
+    <p class="text-sm font-semibold uppercase tracking-widest mb-3" style="color: var(--color-verde);">
+      Quiénes somos
+    </p>
+
+    <!-- Título -->
+    <h2
+      class="text-3xl md:text-5xl font-bold mb-6"
+      style="font-family: var(--font-display); color: var(--color-gris);"
+    >
+      Un espacio para sanar,<br class="hidden md:block" />
+      <span class="italic font-normal">con la naturaleza de tu lado</span>
+    </h2>
+
+    <!-- Descripción -->
+    <p class="text-lg leading-relaxed max-w-2xl mx-auto mb-12" style="color: var(--color-gris);">
+      En <strong>Esencia Vital</strong> creemos que el bienestar verdadero nace cuando cuidamos el cuerpo, la mente y el espíritu como un todo.
+      Acompañamos a cada persona con terapias naturales, productos artesanales y una atención cálida que se siente desde el primer momento.
+      Porque aquí no solo te atendemos: te cuidamos con el alma.
+    </p>
+
+    <!-- Badges de valores -->
+    <div class="flex flex-wrap justify-center gap-4">
+      {valores.map((v) => (
+        <div
+          class="flex items-center gap-2 px-5 py-3 rounded-full font-semibold text-sm shadow-sm border transition-transform duration-200 hover:-translate-y-1"
+          style="background-color: #f0f9e8; border-color: var(--color-verde); color: var(--color-gris);"
+        >
+          <span class="text-xl">{v.emoji}</span>
+          <span>{v.texto}</span>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

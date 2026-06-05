@@ -1,0 +1,87 @@
+---
+import { Icon } from "astro-icon/components";
+
+const servicios = [
+  {
+    icono: "lucide:leaf",
+    nombre: "Macrobiótica",
+    descripcion: "Alimentación consciente para equilibrar cuerpo y mente.",
+    acento: "#8dc63f",
+  },
+  {
+    icono: "lucide:flower-2",
+    nombre: "Terapia con Flores de Bach",
+    descripcion: "Remedios florales para el equilibrio emocional.",
+    acento: "#e8415a",
+  },
+  {
+    icono: "lucide:hand",
+    nombre: "Masaje Relajante y Descontracturante",
+    descripcion: "Liberá la tensión y recuperá tu vitalidad.",
+    acento: "#4bbfcb",
+  },
+  {
+    icono: "lucide:zap",
+    nombre: "Terapia Termo-masaje CERAGEM",
+    descripcion: "Tecnología japonesa de termoterapia para alivio profundo.",
+    acento: "#8dc63f",
+  },
+  {
+    icono: "lucide:wheat",
+    nombre: 'Pan de Masa Madre "Doña Levadura"',
+    descripcion: "Pan artesanal con amor, fermentación natural y sabor de verdad.",
+    acento: "#e8415a",
+  },
+];
+---
+
+<!-- SERVICIOS -->
+<section id="servicios" class="py-20 px-6" style="background-color: #f8fdf4;">
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Encabezado -->
+    <div class="text-center mb-14">
+      <p class="text-sm font-semibold uppercase tracking-widest mb-3" style="color: var(--color-verde);">
+        Lo que ofrecemos
+      </p>
+      <h2
+        class="text-3xl md:text-5xl font-bold"
+        style="font-family: var(--font-display); color: var(--color-gris);"
+      >
+        Nuestros servicios
+      </h2>
+      <div class="mt-4 w-16 h-1 mx-auto rounded-full" style="background-color: var(--color-verde);"></div>
+    </div>
+
+    <!-- Grid de cards -->
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">
+      {servicios.map((s) => (
+        <div
+          class="group bg-white rounded-2xl p-6 shadow-md border border-gray-100 flex flex-col items-start gap-4 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl cursor-default"
+        >
+          <!-- Ícono con fondo de acento -->
+          <div
+            class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
+            style={`background-color: ${s.acento}20;`}
+          >
+            <Icon name={s.icono} class="w-6 h-6" style={`color: ${s.acento};`} />
+          </div>
+
+          <!-- Nombre -->
+          <h3
+            class="font-bold text-base leading-tight"
+            style="font-family: var(--font-display); color: var(--color-gris);"
+          >
+            {s.nombre}
+          </h3>
+
+          <!-- Descripción -->
+          <p class="text-sm leading-relaxed" style="color: #6b7280;">
+            {s.descripcion}
+          </p>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

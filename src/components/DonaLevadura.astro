@@ -1,0 +1,63 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<!-- DOÑA LEVADURA — producto destacado -->
+<section
+  id="dona-levadura"
+  class="py-15 px-6 relative overflow-hidden"
+  style="background: linear-gradient(135deg, #f5e6c8 0%, #e8c98a 50%, #d4a853 100%);"
+>
+  <!-- Elemento decorativo fondo -->
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <svg class="absolute right-0 top-0 opacity-10" width="400" height="400" viewBox="0 0 400 400" fill="none">
+      <circle cx="300" cy="100" r="280" stroke="#f5deb3" stroke-width="1.5" fill="none"/>
+      <circle cx="300" cy="100" r="200" stroke="#f5deb3" stroke-width="1" fill="none"/>
+    </svg>
+  </div>
+
+  <div class="max-w-4xl mx-auto relative z-10">
+    <div class="text-center">
+
+      <!-- Eyebrow -->
+      <p class="text-black/60 text-sm font-semibold uppercase tracking-widest mb-4">
+        Producto especial
+      </p>
+
+      <!-- Nombre en grande -->
+      <h2
+        class="text-5xl md:text-7xl font-black text-black mb-6 leading-none"
+        style="font-family: 'Pacifico', cursive;">
+        Doña Levadura
+      </h2>
+
+      <!-- Logo Doña Levadura -->
+      <div class="flex justify-center mb-8">
+        <img
+          src="/images/DonaLevadura.webp"
+          alt="Logo Doña Levadura - Pan de Masa Madre"
+          class="w-56 h-56 md:w-72 md:h-72 object-contain drop-shadow-xl"
+        />
+      </div>
+
+      <!-- Descripción emotiva -->
+      <p class="text-black/80 text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-8">
+        Cada hogaza de Doña Levadura nace de un proceso artesanal donde el tiempo, la paciencia y el amor son los ingredientes secretos.
+        Masa madre auténtica, fermentación lenta y manos que conocen el oficio. Un pan que sabe a hogar.
+      </p>
+
+      <!-- CTA -->
+      <a
+        href="https://wa.me/50687736281?text=Hola!%20Me%20interesa%20pedir%20pan%20Doña%20Levadura%20😊"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-3 font-bold text-lg px-8 py-4 rounded-full shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl active:scale-95"
+        style="background-color: #7a4010; color: #f5e6c8;"
+      >
+        <Icon name="lucide:message-circle" class="w-6 h-6" />
+        Pedí tu pan
+      </a>
+
+    </div>
+  </div>
+</section>
