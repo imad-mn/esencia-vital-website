@@ -12,7 +12,7 @@ const servicios = [
     icono: "lucide:flower-2",
     nombre: "Terapia con Flores de Bach",
     descripcion: "Remedios florales para el equilibrio emocional.",
-    acento: "#e8415a",
+    acento: "#7c3aed",
   },
   {
     icono: "lucide:hand",
@@ -23,20 +23,14 @@ const servicios = [
   {
     icono: "lucide:zap",
     nombre: "Terapia Termo-masaje CERAGEM",
-    descripcion: "Tecnología japonesa de termoterapia para alivio profundo.",
-    acento: "#8dc63f",
-  },
-  {
-    icono: "lucide:wheat",
-    nombre: 'Pan de Masa Madre "Doña Levadura"',
-    descripcion: "Pan artesanal con amor, fermentación natural y sabor de verdad.",
+    descripcion: "Tecnología surcoreana de termoterapia para alivio profundo.",
     acento: "#e8415a",
-  },
+  }
 ];
 ---
 
 <!-- SERVICIOS -->
-<section id="servicios" class="py-20 px-6" style="background-color: #f8fdf4;">
+<section id="servicios" class="py-20 px-6" style="background-color: #edfae2;">
   <div class="max-w-6xl mx-auto">
 
     <!-- Encabezado -->
@@ -54,7 +48,7 @@ const servicios = [
     </div>
 
     <!-- Grid de cards -->
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-5 md:gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
       {servicios.map((s) => (
         <div
           class="group bg-white rounded-2xl p-6 shadow-md border border-gray-100 flex flex-col items-start gap-4 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl cursor-default"
@@ -69,14 +63,14 @@ const servicios = [
 
           <!-- Nombre -->
           <h3
-            class="font-bold text-base leading-tight"
+            class="font-bold text-xl leading-tight"
             style="font-family: var(--font-display); color: var(--color-gris);"
           >
             {s.nombre}
           </h3>
 
           <!-- Descripción -->
-          <p class="text-sm leading-relaxed" style="color: #6b7280;">
+          <p class="text-base leading-relaxed" style="color: #6b7280;">
             {s.descripcion}
           </p>
         </div>
