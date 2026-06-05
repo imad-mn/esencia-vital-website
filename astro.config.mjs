@@ -16,5 +16,8 @@ export default defineConfig({
   adapter: cloudflare({
     imageService: 'passthrough',
   }),
-  integrations: [icon()]
+  integrations: [icon()],
+  session: {
+    driver: 'cookie' // Keeps session storage on the client side
+  }
 });

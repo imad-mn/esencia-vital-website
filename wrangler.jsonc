@@ -3,6 +3,7 @@
 	"compatibility_flags": ["global_fetch_strictly_public", "nodejs_compat"],
 	"name": "esencia-vital-website",
 	"main": "@astrojs/cloudflare/entrypoints/server",
+	"kv_namespaces": [],
 	"assets": {
 		"directory": "./dist/client"
 	},
